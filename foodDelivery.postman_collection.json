@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "91ec89c7-b756-42a0-a923-f9a50aa48d56",
+		"name": "foodDelivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"Anu123\",\r\n    \"firstName\":\"Anusha\",\r\n    \"lastName\" : \"Jain\",\r\n    \"email\":\"anush@123.com\",\r\n    \"password\":\"anush123\",\r\n    \"address\":\"xyz\",\r\n    \"contactNumber\" : 9148489633\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/users/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserbyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/users/prath123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"prath123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/users/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleteuser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/users/prath123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"prath123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"dhan1233\",\r\n    \"firstName\": \"kDhanraj\",\r\n    \"lastName\": \"kkaip\",\r\n    \"email\": \"kdhan@123.com\",\r\n    \"password\": \"kdhan123\",\r\n    \"contactNumber\": 9786425245,\r\n    \"address\": \"qwerty\",\r\n    \"login\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/users/dhan123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"users",
+						"dhan123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"Bhel123\",\r\n    \"foodName\":\"Bhel\",\r\n    \"foodCost\":\"150\",\r\n    \"description\" : \"fresh Bhel\",\r\n    \"foodPic\":\"www.google.com/bhel\",\r\n    \"foodtype\":1\r\n \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9005/api/food/addFood",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"addFood"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFood",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFoodById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/id/pan123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"id",
+						"pan123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteFoodById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/Nod123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"Nod123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFoodByType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9005/api/food/foodtype/MEXICAN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9005",
+					"path": [
+						"api",
+						"food",
+						"foodtype",
+						"MEXICAN"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
